@@ -136,7 +136,7 @@ export default function Gallery() {
             textAlign: "center",
           }}
         >
-          <h1 className="ghibli-bold-font text-4xl">
+          <h1 className="ghibli-bold-font text-4xl text-black">
             A love letter to Arrietty
           </h1>
         </div>
@@ -239,7 +239,7 @@ export default function Gallery() {
             textAlign: "center",
           }}
         >
-          <h1 className="ghibli-bold-font text-xl">
+          <h1 className="ghibli-bold-font text-xl text-black">
             Kolfschotenstraat 172, 1104 PC Amsterdam
           </h1>
         </div>
@@ -252,7 +252,7 @@ export default function Gallery() {
             textAlign: "center",
           }}
         >
-          <h3 className="ghibli-bold-font text-xs">
+          <h3 className="ghibli-bold-font text-xs text-black">
             Recommended route from Kraaiennest Metro Station.
           </h3>
         </div>
