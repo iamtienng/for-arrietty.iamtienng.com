@@ -1,6 +1,6 @@
 "use client"; // Ensure this component runs on the client side
 
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -125,7 +125,7 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div style={{ backgroundColor: "#f0f0f0" }}>
+    <div style={{ backgroundColor: "#f7f2ef" }}>
       <div>
         <div
           style={{
@@ -136,8 +136,8 @@ export default function Gallery() {
             textAlign: "center",
           }}
         >
-          <h1 className="comic-neue-bold text-4xl">
-            A love letter for Arrietty
+          <h1 className="ghibli-bold-font text-4xl">
+            A love letter to Arrietty
           </h1>
         </div>
       </div>
@@ -167,7 +167,7 @@ export default function Gallery() {
                                        c-24.6,284.5-286.8,140-346.4,140c-182.9-15.9-269.3,213.5-155.7,344.2c118,135.7,31.2,223.3,392,144.9
                                        c158.4-34.4,182.2,81,177.4,136.5c-26.9,51.3-27.4,334.3-150.7,382.5c-112.9,44.1-263.8-30.3-397.7-64.7
                                        c-141.7-36.4-257.9,86.3-257.9,86.3,"
-          stroke="#d1d1d1"
+          stroke="#000000"
           strokeMiterlimit="10"
           strokeWidth="5"
           strokeDasharray="25"
@@ -228,19 +228,34 @@ export default function Gallery() {
           </g>
         </g>
       </svg>
-
       <div style={{ height: "10vh" }}></div>
       <div style={{ height: "400px", width: "100%" }}>
-        <div style={{
-            height: "10vh",
+        <div
+          style={{
+            height: "5vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-          }}><h1 className="comic-neue-bold text-xl">
-            Recommended route to the destination.
-          </h1></div>
-        <div> </div>
+          }}
+        >
+          <h1 className="ghibli-bold-font text-xl">
+            Kolfschotenstraat 172, 1104 PC Amsterdam
+          </h1>
+        </div>
+        <div
+          style={{
+            height: "5vh",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+          }}
+        >
+          <h3 className="ghibli-bold-font text-xs">
+            Recommended route from Kraaiennest Metro Station.
+          </h3>
+        </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d2439.003272176877!2d4.972094127397098!3d52.315943122008434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e2!4m5!1s0x47c60c6d8e06db4f%3A0xe09e6e0aa895e480!2sKraaiennest!3m2!1d52.316561899999996!2d4.9794852!4m3!3m2!1d52.3146561!2d4.9743043!4m5!1s0x47c60c74399f9dcd%3A0x42ce454cf5fe621a!2sKolfschotenstraat%20172%2C%201104%20PC%20Amsterdam%2C%20Netherlands!3m2!1d52.3166358!2d4.9696647!5e0!3m2!1sen!2snl!4v1726143683604!5m2!1sen!2snl"
           width="100%"

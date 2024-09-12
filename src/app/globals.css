@@ -1,11 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Lovers+Quarrel&display=swap');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@font-face {
+  font-family: 'Ghibli-Bold';
+  src: url('./fonts/Ghibli-Bold.otf') format('opentype');
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,14 +31,6 @@ body {
   }
 }
 
-.comic-neue-bold-italic {
-  font-family: "Comic Neue", cursive;
-  font-weight: 700;
-  font-style: italic;
-}
-
-.comic-neue-bold {
-  font-family: "Comic Neue", cursive;
-  font-weight: 700;
-  font-style: normal;
+.ghibli-bold-font {
+  font-family: 'Ghibli-Bold';
 }
