@@ -19,6 +19,36 @@
   }
 }
 
+.text-4xl {
+  font-size: 3.25rem; /* 36px */
+}
+
+.text-sm {
+  font-size: 1.25rem; /* 14px */
+}
+
+.text-width {
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .text-4xl {
+    font-size: 2rem; /* 24px */
+  }
+
+  .text-sm {
+    font-size: 0.75rem; /* 12px */
+  }
+
+  .text-width {
+    width: 100%;
+  }
+
+  .responsive-container {
+    padding: 20px;
+  }
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -33,4 +63,9 @@ body {
 
 .ghibli-bold-font {
   font-family: 'Ghibli-Bold';
+}
+
+.ghibli-bold-menu-font {
+  font-family: 'Ghibli-Bold';
+  letter-spacing: 1px;
 }

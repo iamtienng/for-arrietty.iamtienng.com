@@ -5,6 +5,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMap } from "@fortawesome/free-solid-svg-icons";
 
 export default function Gallery() {
   useEffect(() => {
@@ -134,11 +136,36 @@ export default function Gallery() {
             alignItems: "center", // Center vertically
             justifyContent: "center", // Center horizontally
             textAlign: "center",
+            flexDirection: "column",
+            padding: "20px", // Add padding for better spacing on mobile
           }}
         >
-          <h1 className="ghibli-bold-font text-4xl text-black">
-            A love letter to Arrietty
-          </h1>
+          <div>
+            <h1
+              className="ghibli-bold-font text-4xl text-black"
+              style={{
+                height: "5vh",
+              }}
+            >
+              A love letter to Arrietty
+            </h1>
+          </div>
+          <div className="text-width" style={{ marginTop: "20px" }}>
+            <p
+              className="ghibli-bold-font text-sm text-black"
+              style={{ marginTop: "20px" }}
+            >
+              This gathering is inspired by the magic of simple pleasures, good
+              food, good company, and a sense of fulfillment, much like the
+              feeling you get when watching a heartwarming Ghibli film.
+              <br />
+              <br />
+              "A Love Letter to Arrietty" is my way of sharing the joy and
+              comfort that comes from both delicious meals and cherished
+              moments. I hope everyone who joins this lunch experiences the same
+              warmth and contentment as when we savor a quiet, perfect day.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -227,8 +254,21 @@ export default function Gallery() {
             </g>
           </g>
         </g>
+        <text>
+          <textPath
+            className="ghibli-bold-menu-font text-5xl text-black"
+            href="#motionPath"
+            startOffset="1%"
+            spacing="auto"
+          >
+            <tspan dy="-55" dx="0">
+              I. Drink: Espresso | Cappuccino | Affogato | Red Wine
+            </tspan>
+          </textPath>
+        </text>
       </svg>
       <div style={{ height: "10vh" }}></div>
+
       <div style={{ height: "400px", width: "100%" }}>
         <div
           style={{
@@ -245,26 +285,20 @@ export default function Gallery() {
         </div>
         <div
           style={{
-            height: "5vh",
+            height: "10vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
           }}
         >
-          <h3 className="ghibli-bold-font text-xs text-black">
-            Recommended route from Kraaiennest Metro Station.
-          </h3>
+          <a href="https://maps.app.goo.gl/Ggm6zRnr8dPAk5zX9">
+            <FontAwesomeIcon
+              icon={faMap}
+              style={{ fontSize: "50px", color: "black" }}
+            />
+          </a>
         </div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m32!1m12!1m3!1d2439.003272176877!2d4.972094127397098!3d52.315943122008434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m17!3e2!4m5!1s0x47c60c6d8e06db4f%3A0xe09e6e0aa895e480!2sKraaiennest!3m2!1d52.316561899999996!2d4.9794852!4m3!3m2!1d52.3146561!2d4.9743043!4m5!1s0x47c60c74399f9dcd%3A0x42ce454cf5fe621a!2sKolfschotenstraat%20172%2C%201104%20PC%20Amsterdam%2C%20Netherlands!3m2!1d52.3166358!2d4.9696647!5e0!3m2!1sen!2snl!4v1726143683604!5m2!1sen!2snl"
-          width="100%"
-          height="100%"
-          style={{ border: "0" }}
-          allowFullScreen=""
-          aria-hidden="false"
-          tabIndex="0"
-        ></iframe>
       </div>
     </div>
   );
