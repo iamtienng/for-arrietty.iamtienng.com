@@ -126,8 +126,8 @@ export default function Gallery() {
   }, []);
 
   return (
-    <div>
-      <div style={{ height: "30vh" }}></div>
+    <div style={{ backgroundColor: "#f0f0f0" }}>
+      <div style={{ height: "45vh" }}></div>
 
       <svg
         id="bee-scroll"
@@ -135,7 +135,7 @@ export default function Gallery() {
         viewBox="0 0 1588.4 2762.3"
       >
         <defs>
-          <clipPath id="clip-path">
+          <clipPath id="clipPath">
             <rect
               id="Rectangle_2885"
               data-name="Rectangle 2885"
@@ -148,24 +148,20 @@ export default function Gallery() {
         <style type="text/css">{`.st0 { fill: none; }`}</style>
         <path
           id="motionPath"
-          class="st0"
+          className="st0"
           d="M37.5,31C32.5,41.2,52.3,122.6,358,237.2c222.1,69.8,610.9-11.5,861.3,82.5
                                        c236.4,88.8,340.3,257.8,323.7,416.2c-19.9,209.7-162.4,595.6-340.4,613.1c-106.6-36.6-174.3,34.9-127.1,196.4
                                        c-24.6,284.5-286.8,140-346.4,140c-182.9-15.9-269.3,213.5-155.7,344.2c118,135.7,31.2,223.3,392,144.9
                                        c158.4-34.4,182.2,81,177.4,136.5c-26.9,51.3-27.4,334.3-150.7,382.5c-112.9,44.1-263.8-30.3-397.7-64.7
                                        c-141.7-36.4-257.9,86.3-257.9,86.3"
           stroke="#d1d1d1"
-          stroke-miterlimit="10"
-          stroke-width="5"
-          stroke-dasharray="5"
+          strokeMiterlimit="10"
+          strokeWidth="5"
+          strokeDasharray="5"
         />
         <g id="motionSVG" data-name="Group 1117">
           <g id="bee">
-            <g
-              id="Group_1025"
-              data-name="Group 1025"
-              clip-path="url(#clip-path)"
-            >
+            <g id="Group_1025" data-name="Group 1025" clipPath="url(#clipPath)">
               <path
                 id="Path_332"
                 data-name="Path 332"
