@@ -61,13 +61,6 @@ body {
   height: auto;
 }
 
-.panel {
-  min-height: 100vh;
-  height: auto;
-  /*   position: sticky; */ /* causes problems! */
-  top: 0;
-}
-
 .scroll-down {
   bottom: auto;
   top: 6vh;

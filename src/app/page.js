@@ -1,4 +1,4 @@
-"use client"; // Ensure this component runs on the client side
+"use client";
 
 import { useEffect } from "react";
 import { gsap } from "gsap";
@@ -53,22 +53,21 @@ export default function Gallery() {
       },
     });
 
-    // Create ScrollTriggers for text elements
     gsap.utils.toArray(".scroll-text").forEach((text, i) => {
       gsap.fromTo(
         text,
         { autoAlpha: 0, willChange: "opacity" },
         {
           autoAlpha: 1,
-          duration: 5.5, // Add a duration for smoother animation
-          ease: "power2.out", // Use an easing function for smoother transition
+          duration: 5.5,
+          ease: "power2.out",
           scrollTrigger: {
             trigger: text,
-            start: "top 90%", // Start animation earlier
-            end: "top 10%", // End animation later
-            scrub: 10, // Add a small delay for smoother scrubbing
+            start: "top center",
+            end: "bottom center",
+            scrub: 10,
             markers: false,
-            toggleActions: "play none none reverse", // Add this for smoother behavior when scrolling up
+            toggleActions: "play none none reverse",
           },
         }
       );
