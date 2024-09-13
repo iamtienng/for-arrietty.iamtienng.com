@@ -133,11 +133,11 @@ export default function Gallery() {
           style={{
             height: "45vh",
             display: "flex",
-            alignItems: "center", // Center vertically
-            justifyContent: "center", // Center horizontally
+            alignItems: "center",
+            justifyContent: "center",
             textAlign: "center",
             flexDirection: "column",
-            padding: "20px", // Add padding for better spacing on mobile
+            padding: "20px",
           }}
         >
           <div>
@@ -150,9 +150,9 @@ export default function Gallery() {
               A love letter to Arrietty
             </h1>
           </div>
-          <div className="text-width" style={{ marginTop: "20px" }}>
+          <div className="text-width" style={{ marginTop: "30px" }}>
             <p
-              className="ghibli-bold-font text-sm text-black"
+              className="ghibli-font text-sm text-black"
               style={{ marginTop: "20px" }}
             >
               This gathering is inspired by the magic of simple pleasures, good
@@ -172,7 +172,7 @@ export default function Gallery() {
       <svg
         id="bee-scroll"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1588.4 2762.3"
+        viewBox="0 0 1588.4 3262.3"
       >
         <defs>
           <clipPath id="clipPath">
@@ -189,11 +189,7 @@ export default function Gallery() {
         <path
           id="motionPath"
           className="st0"
-          d="M37.5,31C32.5,41.2,52.3,122.6,358,237.2c222.1,69.8,610.9-11.5,861.3,82.5
-                                       c236.4,88.8,340.3,257.8,323.7,416.2c-19.9,209.7-162.4,595.6-340.4,613.1c-106.6-36.6-174.3,34.9-127.1,196.4
-                                       c-24.6,284.5-286.8,140-346.4,140c-182.9-15.9-269.3,213.5-155.7,344.2c118,135.7,31.2,223.3,392,144.9
-                                       c158.4-34.4,182.2,81,177.4,136.5c-26.9,51.3-27.4,334.3-150.7,382.5c-112.9,44.1-263.8-30.3-397.7-64.7
-                                       c-141.7-36.4-257.9,86.3-257.9,86.3,"
+          d=" M37.5 31C32.5 41.2 52.3 122.6 358 237.2 580.1 307 968.9 225.7 1219.3 319.7 1455.7 408.5 1536 531 1408 617 1028 820 873 348 318 610-602 1097 1505 736 1459 1016 1379 1503 107 617 57 1110-47 1729 854 929 1180 1357 1388 1689 105 1193 47 1525 3 2122 851 1294 1035 1718 1137 1944 231 1727 147 1997-43 2541 1252 1646 1470 1984 1572 2178 785 2355 791 2894"
           stroke="#000000"
           strokeMiterlimit="10"
           strokeWidth="5"
@@ -258,34 +254,90 @@ export default function Gallery() {
           <textPath
             className="ghibli-bold-menu-font text-5xl text-black"
             href="#motionPath"
-            startOffset="1%"
-            spacing="auto"
+            startOffset="0.5%"
           >
             <tspan dy="-55" dx="0">
               I. Drink: Espresso | Cappuccino | Affogato | Red Wine
             </tspan>
           </textPath>
+
+          <textPath
+            className="ghibli-bold-menu-font text-5xl text-black"
+            href="#motionPath"
+            startOffset="15%"
+          >
+            <tspan dy="65" dx="0" rotate={180}>
+              {"D resscode : Ca su a l".split("").reverse().join("")}
+            </tspan>
+          </textPath>
+
+          <textPath
+            className="ghibli-bold-menu-font text-5xl text-black"
+            href="#motionPath"
+            startOffset="23.5%"
+          >
+            <tspan dy="-55" dx="0">
+              II. Starter: Spaghetti alla Bolognese | Carbonara
+            </tspan>
+          </textPath>
+
+          <textPath
+            className="ghibli-bold-menu-font text-5xl text-black"
+            href="#motionPath"
+            startOffset="47%"
+          >
+            <tspan dy="-55" dx="0">
+              III. Main: Beefsteak
+            </tspan>
+          </textPath>
+
+          <textPath
+            className="ghibli-bold-menu-font text-5xl text-black"
+            href="#motionPath"
+            startOffset="66.5%"
+          >
+            <tspan dy="-55" dx="0">
+              IV. Side: Potato Soup
+            </tspan>
+          </textPath>
+          <textPath
+            className="ghibli-bold-menu-font text-5xl text-black"
+            href="#motionPath"
+            startOffset="82%"
+          >
+            <tspan dy="-55" dx="0">
+              V. Dessert: Red Velvet | Tiramisù | Cheese Cake
+            </tspan>
+          </textPath>
         </text>
       </svg>
-      <div style={{ height: "10vh" }}></div>
 
-      <div style={{ height: "400px", width: "100%" }}>
+      <div style={{ marginTop: "5px", width: "100%" }}>
         <div
           style={{
-            height: "5vh",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            flexDirection: "column",
             textAlign: "center",
           }}
         >
           <h1 className="ghibli-bold-font text-xl text-black">
+            Lunch 12:34 - 29th of September
+          </h1>
+          <br />
+          <h1
+            className="ghibli-bold-font text-xl text-black"
+            style={{
+              marginTop: "30px",
+            }}
+          >
             Kolfschotenstraat 172, 1104 PC Amsterdam
           </h1>
         </div>
         <div
           style={{
-            height: "10vh",
+            marginTop: "30px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -299,6 +351,7 @@ export default function Gallery() {
             />
           </a>
         </div>
+        <div style={{ height: "20vh" }}></div>
       </div>
     </div>
   );

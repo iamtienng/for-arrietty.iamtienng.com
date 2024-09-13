@@ -8,8 +8,13 @@
 }
 
 @font-face {
-  font-family: 'Ghibli-Bold';
-  src: url('./fonts/Ghibli-Bold.otf') format('opentype');
+  font-family: "Ghibli-Bold";
+  src: url("./fonts/Ghibli-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Ghibli";
+  src: url("./fonts/Ghibli.otf") format("opentype");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,7 +38,7 @@
 
 @media (max-width: 768px) {
   .text-4xl {
-    font-size: 2rem; /* 24px */
+    font-size: 1.75rem; /* 24px */
   }
 
   .text-sm {
@@ -62,10 +67,14 @@ body {
 }
 
 .ghibli-bold-font {
-  font-family: 'Ghibli-Bold';
+  font-family: "Ghibli-Bold";
+}
+
+.ghibli-font {
+  font-family: "Ghibli";
 }
 
 .ghibli-bold-menu-font {
-  font-family: 'Ghibli-Bold';
-  letter-spacing: 1px;
+  font-family: "Ghibli-Bold";
+  letter-spacing: 2px;
 }
