@@ -52,6 +52,24 @@ export default function Gallery() {
       },
     });
 
+    // Create ScrollTriggers for text elements
+    gsap.utils.toArray(".scroll-text").forEach((text, i) => {
+      gsap.fromTo(
+        text,
+        { autoAlpha: 0, willChange: "opacity" },
+        {
+          autoAlpha: 1,
+          scrollTrigger: {
+            trigger: text,
+            start: "top 80%",
+            end: "top 20%",
+            scrub: true,
+            markers: false,
+          },
+        }
+      );
+    });
+
     function pathEase(path, config = {}) {
       let axis = config.axis || "y",
         precision = config.precision || 1,
@@ -156,7 +174,7 @@ export default function Gallery() {
               style={{ marginTop: "20px" }}
             >
               This gathering is inspired by the magic of simple pleasures, good
-              food, good company, and a sense of fulfillment, much like the
+              food, good friend, and a sense of fulfillment, much like the
               feeling you get when watching a heartwarming Ghibli film.
               <br />
               <br />A Love Letter to Arrietty is my way of sharing the joy and
@@ -249,9 +267,9 @@ export default function Gallery() {
             </g>
           </g>
         </g>
-        <text>
+        <text id="scrollText">
           <textPath
-            className="ghibli-bold-menu-font text-5xl text-black"
+            className="ghibli-bold-menu-font text-5xl text-black scroll-text"
             href="#motionPath"
             startOffset="0.5%"
           >
@@ -271,7 +289,7 @@ export default function Gallery() {
           </textPath>
 
           <textPath
-            className="ghibli-bold-menu-font text-5xl text-black"
+            className="ghibli-bold-menu-font text-5xl text-black scroll-text"
             href="#motionPath"
             startOffset="23.5%"
           >
@@ -281,7 +299,7 @@ export default function Gallery() {
           </textPath>
 
           <textPath
-            className="ghibli-bold-menu-font text-5xl text-black"
+            className="ghibli-bold-menu-font text-5xl text-black scroll-text"
             href="#motionPath"
             startOffset="6500"
           >
@@ -291,7 +309,7 @@ export default function Gallery() {
           </textPath>
 
           <textPath
-            className="ghibli-bold-menu-font text-5xl text-black"
+            className="ghibli-bold-menu-font text-5xl text-black scroll-text"
             href="#motionPath"
             startOffset="9200"
           >
@@ -300,7 +318,7 @@ export default function Gallery() {
             </tspan>
           </textPath>
           <textPath
-            className="ghibli-bold-menu-font text-5xl text-black"
+            className="ghibli-bold-menu-font text-5xl text-black scroll-text"
             href="#motionPath"
             startOffset="11350"
           >
