@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -56,15 +57,22 @@ export default function Gallery() {
     gsap.utils.toArray(".scroll-text").forEach((text, i) => {
       gsap.fromTo(
         text,
-        { autoAlpha: 0, willChange: "opacity" },
+        { opacity: 0 },
         {
-          autoAlpha: 1,
+          opacity: 1,
+          duration: 1.5,
+          ease: "power2.out",
           scrollTrigger: {
             trigger: text,
-            start: "top 80%",
-            end: "top 20%",
-            scrub: true,
+            start: "top 90%",
+            end: "top 10%",
+            scrub: 1,
             markers: false,
+            toggleActions: "play none none reverse",
+            onEnter: () =>
+              gsap.to(text, { opacity: 1, duration: 1.5, ease: "power2.out" }),
+            onLeaveBack: () =>
+              gsap.to(text, { opacity: 0, duration: 1.5, ease: "power2.in" }),
           },
         }
       );

@@ -58,6 +58,20 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+}
+
+.panel {
+  min-height: 100vh;
+  height: auto;
+  /*   position: sticky; */ /* causes problems! */
+  top: 0;
+}
+
+.scroll-down {
+  bottom: auto;
+  top: 6vh;
+  position: relative;
 }
 
 @layer utilities {
