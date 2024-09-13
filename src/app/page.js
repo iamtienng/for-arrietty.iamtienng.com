@@ -160,7 +160,7 @@ export default function Gallery() {
               feeling you get when watching a heartwarming Ghibli film.
               <br />
               <br />
-              "A Love Letter to Arrietty" is my way of sharing the joy and
+              A Love Letter to Arrietty is my way of sharing the joy and
               comfort that comes from both delicious meals and cherished
               moments. I hope everyone who joins this lunch experiences the same
               warmth and contentment as when we savor a quiet, perfect day.
