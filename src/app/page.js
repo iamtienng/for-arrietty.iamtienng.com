@@ -24,7 +24,7 @@ export default function Gallery() {
         trigger: "#motionPath",
         start: "top center",
         end: "bottom center",
-        scrub: 0.7,
+        scrub: 3,
         markers: false,
         onUpdate: (self) => {
           let rotation = getProp("rotation"),
