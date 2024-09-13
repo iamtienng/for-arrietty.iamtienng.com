@@ -59,13 +59,13 @@ export default function Gallery() {
         { autoAlpha: 0, willChange: "opacity" },
         {
           autoAlpha: 1,
-          duration: 5.5,
+          duration: 1.5,
           ease: "power2.out",
           scrollTrigger: {
             trigger: text,
-            start: "top center",
-            end: "bottom center",
-            scrub: 10,
+            start: "top 90%",
+            end: "bottom 10%",
+            scrub: 5,
             markers: false,
             toggleActions: "play none none reverse",
           },
