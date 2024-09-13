@@ -159,8 +159,7 @@ export default function Gallery() {
               food, good company, and a sense of fulfillment, much like the
               feeling you get when watching a heartwarming Ghibli film.
               <br />
-              <br />
-              A Love Letter to Arrietty is my way of sharing the joy and
+              <br />A Love Letter to Arrietty is my way of sharing the joy and
               comfort that comes from both delicious meals and cherished
               moments. I hope everyone who joins this lunch experiences the same
               warmth and contentment as when we savor a quiet, perfect day.
@@ -262,12 +261,12 @@ export default function Gallery() {
           </textPath>
 
           <textPath
-            className="ghibli-bold-menu-font text-5xl text-black"
+            style={{ color: "#f7f2ef" }}
             href="#motionPath"
             startOffset="15%"
           >
             <tspan dy="65" dx="0" rotate={180}>
-              {"D resscode : Ca su a l".split("").reverse().join("")}
+              {"'".split("").reverse().join("")}
             </tspan>
           </textPath>
 
@@ -284,9 +283,9 @@ export default function Gallery() {
           <textPath
             className="ghibli-bold-menu-font text-5xl text-black"
             href="#motionPath"
-            startOffset="47%"
+            startOffset="6500"
           >
-            <tspan dy="-55" dx="0">
+            <tspan dy="-35" dx="0">
               III. Main: Beefsteak
             </tspan>
           </textPath>
@@ -294,18 +293,18 @@ export default function Gallery() {
           <textPath
             className="ghibli-bold-menu-font text-5xl text-black"
             href="#motionPath"
-            startOffset="66.5%"
+            startOffset="9200"
           >
-            <tspan dy="-55" dx="0">
+            <tspan dy="50" dx="0">
               IV. Side: Potato Soup
             </tspan>
           </textPath>
           <textPath
             className="ghibli-bold-menu-font text-5xl text-black"
             href="#motionPath"
-            startOffset="82%"
+            startOffset="11350"
           >
-            <tspan dy="-55" dx="0">
+            <tspan dy="90" dx="0">
               V. Dessert: Red Velvet | Tiramisù | Cheese Cake
             </tspan>
           </textPath>
@@ -332,12 +331,21 @@ export default function Gallery() {
               marginTop: "30px",
             }}
           >
+            Dresscode: Casual
+          </h1>
+          <br />
+          <h1
+            className="ghibli-bold-font text-xl text-black"
+            style={{
+              marginTop: "30px",
+            }}
+          >
             Kolfschotenstraat 172, 1104 PC Amsterdam
           </h1>
         </div>
         <div
           style={{
-            marginTop: "30px",
+            marginTop: "50px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
