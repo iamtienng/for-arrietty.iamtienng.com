@@ -57,22 +57,18 @@ export default function Gallery() {
     gsap.utils.toArray(".scroll-text").forEach((text, i) => {
       gsap.fromTo(
         text,
-        { opacity: 0 },
+        { autoAlpha: 0, willChange: "opacity" },
         {
-          opacity: 1,
-          duration: 1.5,
-          ease: "power2.out",
+          autoAlpha: 1,
+          duration: 5.5, // Add a duration for smoother animation
+          ease: "power2.out", // Use an easing function for smoother transition
           scrollTrigger: {
             trigger: text,
-            start: "top 90%",
-            end: "top 10%",
-            scrub: 1,
+            start: "top 90%", // Start animation earlier
+            end: "top 10%", // End animation later
+            scrub: 10, // Add a small delay for smoother scrubbing
             markers: false,
-            toggleActions: "play none none reverse",
-            onEnter: () =>
-              gsap.to(text, { opacity: 1, duration: 1.5, ease: "power2.out" }),
-            onLeaveBack: () =>
-              gsap.to(text, { opacity: 0, duration: 1.5, ease: "power2.in" }),
+            toggleActions: "play none none reverse", // Add this for smoother behavior when scrolling up
           },
         }
       );
