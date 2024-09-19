@@ -343,7 +343,7 @@ export default function Gallery() {
           }}
         >
           <h1 className="ghibli-bold-font text-xl text-black">
-            Lunch 12:34 - 28th of September
+            Lunch 12:34 - Saturday - 28th of September
           </h1>
           <br />
           <h1
